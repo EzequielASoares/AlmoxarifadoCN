@@ -24,7 +24,7 @@ const LoginForm = ({onLogin}) => {
   return (
     <div className='wrapper'>
       <form onSubmit={handleLogin}>
-        <h1>Login</h1>
+        <h1>testando</h1>
         <div className='input-box'>
           <input
             type='text'
@@ -48,7 +48,7 @@ const LoginForm = ({onLogin}) => {
 
         {error && <div className='error-message'>{error}</div>}
 
-        <button type='submit'>TESTANDO</button>
+        <button type='submit'>Login</button>
       </form>
     </div>
   );

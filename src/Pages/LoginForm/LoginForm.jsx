@@ -48,7 +48,7 @@ const LoginForm = ({onLogin}) => {
 
         {error && <div className='error-message'>{error}</div>}
 
-        <button type='submit'>Login</button>
+        <button type='submit'>TESTANDO</button>
       </form>
     </div>
   );

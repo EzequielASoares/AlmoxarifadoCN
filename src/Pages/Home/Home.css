@@ -49,8 +49,7 @@
   
   @media screen and (max-width: 758px) {
     .container h1 {
-      position: absolute;
-      font-size: 28px;
+      display: none;
     }
   
     .astronautinha {

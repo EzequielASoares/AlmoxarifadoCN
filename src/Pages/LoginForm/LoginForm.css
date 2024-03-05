@@ -1,32 +1,34 @@
-*{
+* {
     justify-content: center;
     align-items: center;
 }
 
 .wrapper {
-    width: 420px;
+    width: 100%; /* Utilize uma porcentagem para definir a largura em relação à largura do viewport */
+    max-width: 420px; /* Defina uma largura máxima para garantir que o conteúdo não fique muito amplo em telas grandes */
     background: transparent;
-    border: 2px solid rgba(255,255,255, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(30px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
+    margin: 0 auto; /* Centralize o elemento horizontalmente */
 }
 
-.wrapper h1{
+.wrapper h1 {
     font-size: 36px;
     text-align: center;
 }
 
-.wrapper .input-box{
+.wrapper .input-box {
     position: relative;
     width: 100%;
     height: 50px;
-    margin: 30px 0;
+    margin: 20px 0; /* Reduza a margem superior e inferior para dispositivos móveis */
 }
 
-.input-box input{
+.input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -36,14 +38,14 @@
     border-radius: 40px;
     font-size: 16px;
     color: #fff;
-    padding: 20px 45px 20px 20px;
+    padding: 15px 20px; /* Reduza o preenchimento para dispositivos móveis */
 }
 
-.input-box input::placeholder{
+.input-box input::placeholder {
     color: #fff;
 }
 
-.input-box .icon{
+.input-box .icon {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -58,14 +60,21 @@
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
     color: #333;
     font-weight: 700;
-    transition: background-color 0.3s; /* Adiciona uma transição suave */
+    transition: background-color 0.3s;
 }
 
 .wrapper button:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Define a cor de fundo transparente quando o mouse está sobre o botão */
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Media query para dispositivos com largura máxima de 600px (como celulares) */
+@media screen and (max-width: 600px) {
+    .wrapper {
+        padding: 20px; /* Reduza o preenchimento para dispositivos móveis */
+    }
 }

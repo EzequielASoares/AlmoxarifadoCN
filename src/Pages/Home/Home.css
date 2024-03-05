@@ -3,21 +3,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+  
+.container h1 {
+ font-size: 48px;
+}
 
 .title{
  position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
-
-@media screen and (max-width: 758px) {
-  .title {
-    display: none;
-  }
-
-  .astronautinha {
-    display: none;
-  }
 }
 
 .titleAlmoxarifado{
@@ -43,10 +37,6 @@
     overflow-x: hidden;
   }
   
-  .container h1 {
-    font-size: 48px;
-  }
-  
   .home-content {
     justify-content: space-between;
     align-items: center;
@@ -55,5 +45,22 @@
   
   .home-content img {
     max-width: 50vh;
+  }
+  
+  @media screen and (max-width: 758px) {
+    .container h1 {
+      position: absolute;
+      font-size: 28px;
+    }
+  
+    .astronautinha {
+      display: none;
+    }
+  
+    .home-content{
+      justify-content: center;
+      padding-top: 88px;
+      padding-bottom: 48px;
+    }
   }
   

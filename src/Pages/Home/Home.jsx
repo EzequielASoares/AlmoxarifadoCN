@@ -4,11 +4,13 @@ import Formulario from '../../Components/Formulario/Formulario';
 import austronauta from '../../Components/Assets/astronauta.png'
 import Almoxarifado from '../../Components/Almoxarifado/Almoxarifado';
 import ButtonGroup from '../../Components/ButtonGroup/ButtonGroup';
+import logo from '../../Components/Assets/logocn.png';
 
 const Home = () => {
   return (
     <div className='container'>
-      <h1 className='title'>OLÁ COMETA, TUDO BEM? </h1>
+      <h1 className='title'> OLÁ COMETA, TUDO BEM? </h1>
+      <img className='logocn' src={logo} alt="Logo CN" />
       <div className='home-content'>
       <Formulario className='formsdecompra' />
       <img className='astronautinha' src= {austronauta} />

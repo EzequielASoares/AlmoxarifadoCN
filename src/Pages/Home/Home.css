@@ -71,7 +71,7 @@
     .container img.logocn {
       width: 400px; /* Define a largura desejada para o logotipo */
       height: 400px; /* Mantém a proporção da imagem */
-      margin-left: 35px;
-    }
+      margin-left: calc(50% - 200px); /* Calcula a margem esquerda para centralizar a imagem */
+  }  
   }
   

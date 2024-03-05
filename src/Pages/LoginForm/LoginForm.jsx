@@ -24,7 +24,7 @@ const LoginForm = ({onLogin}) => {
   return (
     <div className='wrapper'>
       <form onSubmit={handleLogin}>
-        <h1>testando</h1>
+        <h1>Login</h1>
         <div className='input-box'>
           <input
             type='text'

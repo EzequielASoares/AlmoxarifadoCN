@@ -22,7 +22,7 @@ const Formulario = () => {
   const [escolas, setEscolas] = useState([]);
   const [novaEscola, setNovaEscola] = useState("");
   const [mostrarInput, setMostrarInput] = useState(false);
-  const [containerHeight, setContainerHeight] = useState('120px'); // Altura inicial do contêiner
+  const [containerHeight, setContainerHeight] = useState('250px'); // Altura inicial do contêiner
 
   useEffect(() => {
     fetchData();

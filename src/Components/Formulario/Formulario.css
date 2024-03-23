@@ -1,0 +1,43 @@
+.form-container {
+    width: 303px;
+    height: auto;
+    border-radius: 42px;
+    background: #502961d4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .form-container h2 {
+    color: #FFF;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+  }
+  
+  .button {
+    color: #fff;
+    text-align: center;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #FFF;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .escola-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+  }
+  
+  .trash-icon {
+    margin-right: 5px;
+    font-size: 16px;
+  }

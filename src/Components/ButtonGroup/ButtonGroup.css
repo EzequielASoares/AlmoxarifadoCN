@@ -1,0 +1,32 @@
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .purple-button {
+    background-color: #502961;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 1.5s ease;
+    text-decoration: none; 
+  }
+  
+  .purple-button:hover {
+    background-color: #3b1d49;
+  }
+  
+  .button-text {
+    margin-left: 5px;
+  }
+  

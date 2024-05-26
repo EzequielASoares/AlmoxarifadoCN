@@ -22,7 +22,7 @@ const Formulario = () => {
   const [escolas, setEscolas] = useState([]);
   const [novaEscola, setNovaEscola] = useState("");
   const [mostrarInput, setMostrarInput] = useState(false);
-  const [containerHeight, setContainerHeight] = useState('250px'); // Altura inicial do contêiner
+  const [containerHeight, setContainerHeight] = useState('350px'); // Altura inicial do contêiner
 
   useEffect(() => {
     fetchData();
@@ -36,6 +36,7 @@ const Formulario = () => {
         itemsData.push({ id: doc.id, ...doc.data() });
       });
       setEscolas(itemsData);
+      setContainerHeight(`${120 + itemsData.length * 28}px`); // Define a altura do contêiner com base no número de itens
     } catch (error) {
       console.error('Erro ao buscar dados:', error);
     }
@@ -64,10 +65,11 @@ const Formulario = () => {
   const adicionarEscola = () => {
     if (novaEscola.trim() !== "") {
       adicionarEscolaFirestore(novaEscola);
-      setEscolas([...escolas, { id: Date.now(), nome: novaEscola }]);
+      const novasEscolas = [...escolas, { id: Date.now(), nome: novaEscola }];
+      setEscolas(novasEscolas);
       setNovaEscola("");
       setMostrarInput(false);
-      setContainerHeight(`${120 + (escolas.length + 1) * 35}px`);
+      setContainerHeight(`${120 + novasEscolas.length * 28}px`);
     }
   };
 
@@ -75,7 +77,7 @@ const Formulario = () => {
     excluirEscolaFirestore(id);
     const novasEscolas = escolas.filter(escola => escola.id !== id);
     setEscolas(novasEscolas);
-    setContainerHeight(`${120 + novasEscolas.length * 35}px`);
+    setContainerHeight(`${120 + novasEscolas.length * 28}px`);
   };
 
   return (
